@@ -1,2 +1,2 @@
 # ETAdCycleView
-A cycle or loop UIScrollview for horizonal advertisement or banner！
+An auto cycle or loop UIScrollview for horizonal advertisement or banner！
