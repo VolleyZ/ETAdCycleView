@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D3F67B01CA11E9400AA2B27 /* ETAdCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F67AE1CA11E9400AA2B27 /* ETAdCycleView.swift */; };
+		0D3F67B11CA11E9400AA2B27 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F67AF1CA11E9400AA2B27 /* UIView+Frame.swift */; };
 		0D4C122B1C9FE9A2007BD0B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C122A1C9FE9A2007BD0B7 /* AppDelegate.swift */; };
 		0D4C122D1C9FE9A2007BD0B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C122C1C9FE9A2007BD0B7 /* ViewController.swift */; };
 		0D4C12301C9FE9A2007BD0B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C122E1C9FE9A2007BD0B7 /* Main.storyboard */; };
 		0D4C12321C9FE9A2007BD0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C12311C9FE9A2007BD0B7 /* Assets.xcassets */; };
 		0D4C12351C9FE9A2007BD0B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C12331C9FE9A2007BD0B7 /* LaunchScreen.storyboard */; };
-		0D4C123F1C9FEA2E007BD0B7 /* ETAdCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C123D1C9FEA2E007BD0B7 /* ETAdCycleView.swift */; };
-		0D4C12401C9FEA2E007BD0B7 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C123E1C9FEA2E007BD0B7 /* UIView+Frame.swift */; };
 		8262F28455CDC5BBE408BF70 /* Pods_ETAdCycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156AA7A3DC7BA0E45F988574 /* Pods_ETAdCycleView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09C6DE2EF0F123780F340030 /* Pods-ETAdCycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETAdCycleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETAdCycleView/Pods-ETAdCycleView.release.xcconfig"; sourceTree = "<group>"; };
 		0A2036119C76C14516CE3156 /* Pods-ETAdCycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETAdCycleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETAdCycleView/Pods-ETAdCycleView.debug.xcconfig"; sourceTree = "<group>"; };
+		0D3F67AE1CA11E9400AA2B27 /* ETAdCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAdCycleView.swift; sourceTree = "<group>"; };
+		0D3F67AF1CA11E9400AA2B27 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		0D4C12271C9FE9A2007BD0B7 /* ETAdCycleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETAdCycleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4C122A1C9FE9A2007BD0B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4C122C1C9FE9A2007BD0B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		0D4C12311C9FE9A2007BD0B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D4C12341C9FE9A2007BD0B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D4C12361C9FE9A2007BD0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D4C123D1C9FEA2E007BD0B7 /* ETAdCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAdCycleView.swift; sourceTree = "<group>"; };
-		0D4C123E1C9FEA2E007BD0B7 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		156AA7A3DC7BA0E45F988574 /* Pods_ETAdCycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETAdCycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,9 +44,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3F67AD1CA11E9400AA2B27 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F67AE1CA11E9400AA2B27 /* ETAdCycleView.swift */,
+				0D3F67AF1CA11E9400AA2B27 /* UIView+Frame.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		0D4C121E1C9FE9A2007BD0B7 = {
 			isa = PBXGroup;
 			children = (
+				0D3F67AD1CA11E9400AA2B27 /* Class */,
 				0D4C12291C9FE9A2007BD0B7 /* ETAdCycleView */,
 				0D4C12281C9FE9A2007BD0B7 /* Products */,
 				A06F146617C9D35EE8D043A4 /* Pods */,
@@ -65,22 +75,12 @@
 		0D4C12291C9FE9A2007BD0B7 /* ETAdCycleView */ = {
 			isa = PBXGroup;
 			children = (
-				0D4C123C1C9FEA2E007BD0B7 /* ETAdCycleView */,
 				0D4C122A1C9FE9A2007BD0B7 /* AppDelegate.swift */,
 				0D4C122C1C9FE9A2007BD0B7 /* ViewController.swift */,
 				0D4C122E1C9FE9A2007BD0B7 /* Main.storyboard */,
 				0D4C12311C9FE9A2007BD0B7 /* Assets.xcassets */,
 				0D4C12331C9FE9A2007BD0B7 /* LaunchScreen.storyboard */,
 				0D4C12361C9FE9A2007BD0B7 /* Info.plist */,
-			);
-			path = ETAdCycleView;
-			sourceTree = "<group>";
-		};
-		0D4C123C1C9FEA2E007BD0B7 /* ETAdCycleView */ = {
-			isa = PBXGroup;
-			children = (
-				0D4C123D1C9FEA2E007BD0B7 /* ETAdCycleView.swift */,
-				0D4C123E1C9FEA2E007BD0B7 /* UIView+Frame.swift */,
 			);
 			path = ETAdCycleView;
 			sourceTree = "<group>";
@@ -224,10 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D4C12401C9FEA2E007BD0B7 /* UIView+Frame.swift in Sources */,
+				0D3F67B11CA11E9400AA2B27 /* UIView+Frame.swift in Sources */,
 				0D4C122D1C9FE9A2007BD0B7 /* ViewController.swift in Sources */,
 				0D4C122B1C9FE9A2007BD0B7 /* AppDelegate.swift in Sources */,
-				0D4C123F1C9FEA2E007BD0B7 /* ETAdCycleView.swift in Sources */,
+				0D3F67B01CA11E9400AA2B27 /* ETAdCycleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
