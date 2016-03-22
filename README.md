@@ -1,20 +1,56 @@
 # ETAdCycleView
-An auto cycle or loop UIScrollview for horizonal advertisement or banner！
+An auto cycle or loop UIScrollview for horizonal advertisement or banner！一个自动无限循环轮播广告图
 
-**Swift实现的自动轮播器**
-**AutoDisplayCycleScrollView in Swift**
+## Usage
+---------
+## Installation
 
-###描述(Description) 
-来自于Git上的CycleScrollView
+ETAdCycleView is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-this code from git
+```ruby
+pod "ETAdCycleView"
+```
+### Run Example
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-修改后可以使用 Xib 和 Storyboard 初始化
+### Quick Start
+* In your podfile, just add `pod 'ETAdCycleView`, then `pod update`.
+* Write api code to run a networking call:
 
-now it's can init by xib or Storyboard
+* Use frame create
+``` 
+adCycleScroll = ETAdCycleView(frame: CGRect(x: 0, y: 30, width: view.size_width, height: 100))
+view.addSubview(adCycleScroll)
 
-增加了自动播放功能,只需要设置timeinterval 如果不想自动播放则设置成0 
+let adImages = ["https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/logo.png"
+,
+"http://tb1.bdstatic.com/tb/cms/frs/bg/default_head20141014.jpg",
+"https://www.baidu.com/img/bd_logo1.png",
+""]
+adCycleScroll.et_setCycleImagesWithURLs(adImages, placeHolder: UIImage(named: "u86"))
+``` 
 
-just set timeinterval it can auto display  else set to 0
+* Use xib or storyboard create
+``` 
+let adCycleImages = ["https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/logo.png"
+,
+"http://tb1.bdstatic.com/tb/cms/frs/bg/default_head20141014.jpg",
+"https://www.baidu.com/img/bd_logo1.png",
+""]
+ibCycleView.et_setCycleImagesWithURLs(adCycleImages, placeHolder: UIImage(named: "u86"))
+``` 
 
-设置如果不想用户手动控制翻页只需要 将源码中contentSize 设置成selfwidth
+* Click image delegate
+``` 
+adCycleScroll.delegate = self
+``` 
+* Delegate
+```
+func et_cycleView(didClickPage pageView: UIImageView, atIndex index: Int) {
+print("\(index)")
+}
+```  
+## License
+
+ETAdCycleView is available under the MIT license. See the LICENSE file for more info.

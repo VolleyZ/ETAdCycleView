@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "VolleyZ" => “volleyzhang@hotmail.com" }
   s.source       = { :git => "https://github.com/VolleyZ/ETAdCycleView.git" :tag => s.version.to_s }
 
-  s.source_files  = 'SMPagerTab/SMPagerTabView/**/*.{h,m}'
-  s.dependency 'Masonry', '~> 0.6.2'
+  s.source_files  = 'ETAdCycleView/ETAdCycleView/Class/**/*.{h,m}'
+  s.dependency 'Kingfisher', '~> 2.1'
+  s.ios.deployment_target = "8.0"
 end
