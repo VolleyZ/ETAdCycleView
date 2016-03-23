@@ -95,9 +95,9 @@ class ETAdCycleView: UIView {
         leftView.userInteractionEnabled = true
         centerView.userInteractionEnabled = true
         rightView.userInteractionEnabled = true
-        let tapL = UITapGestureRecognizer(target: self, action: "tapAction:")
-        let tapC = UITapGestureRecognizer(target: self, action: "tapAction:")
-        let tapR = UITapGestureRecognizer(target: self, action: "tapAction:")
+        let tapL = UITapGestureRecognizer(target: self, action: #selector(ETAdCycleView.tapAction(_:)))
+        let tapC = UITapGestureRecognizer(target: self, action: #selector(ETAdCycleView.tapAction(_:)))
+        let tapR = UITapGestureRecognizer(target: self, action: #selector(ETAdCycleView.tapAction(_:)))
         leftView.addGestureRecognizer(tapL)
         centerView.addGestureRecognizer(tapC)
         rightView.addGestureRecognizer(tapR)
@@ -156,7 +156,7 @@ class ETAdCycleView: UIView {
     private var timeInterval = 0.0 {
         didSet {
             if timer == nil {
-                timer = NSTimer.scheduledTimerWithTimeInterval(switchTime, target: self, selector: "autoPlayAD", userInfo: nil, repeats: true)
+                timer = NSTimer.scheduledTimerWithTimeInterval(switchTime, target: self, selector: #selector(ETAdCycleView.autoPlayAD), userInfo: nil, repeats: true)
                 NSRunLoop.currentRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
             }
         }
