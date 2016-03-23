@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "ETCycleView"
+  s.name         = "ETAdCycleView"
   s.version      = “1.0.0”
 
   s.homepage     = "https://github.com/VolleyZ/ETAdCycleView"
