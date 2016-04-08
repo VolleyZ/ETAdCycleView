@@ -20,15 +20,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 * Use frame create
 ``` 
-adCycleScroll = ETAdCycleView(frame: CGRect(x: 0, y: 30, width: view.size_width, height: 100))
-view.addSubview(adCycleScroll)
+cycleScrollView = ETAdCycleView(frame: CGRect(x: 0, y: 30, width: view.size_width, height: 100))
+view.addSubview(cycleScrollView)
 
 let adImages = ["https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/logo.png"
 ,
 "http://tb1.bdstatic.com/tb/cms/frs/bg/default_head20141014.jpg",
 "https://www.baidu.com/img/bd_logo1.png",
 ""]
-adCycleScroll.et_setCycleImagesWithURLs(adImages, placeHolder: UIImage(named: "u86"))
+cycleScrollView.et_setCycleImagesWithURLs(adImages, placeHolder: UIImage(named: "u86"))
 ``` 
 
 * Use xib or storyboard create
@@ -43,7 +43,7 @@ ibCycleView.et_setCycleImagesWithURLs(adCycleImages, placeHolder: UIImage(named:
 
 * Click image delegate
 ``` 
-adCycleScroll.delegate = self
+cycleScrollView.delegate = self
 ``` 
 * Delegate
 ```
